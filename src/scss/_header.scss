@@ -1,0 +1,126 @@
+.mobile-menu-navigation {
+  position: absolute;
+  z-index: 25;
+  top: 84px;
+  bottom: 0;
+  right: 200%;
+  max-width: 865px;
+  transition: all .25s ease;
+  box-shadow: -24px 0px 24px -12px rgba(34, 60, 80, 0.2);
+
+  .navigation {
+    display: block;
+    padding: 28px 45px 13px 60px;
+    background: #88318E;
+
+    .active {
+      position: relative;
+
+      a {
+        font-weight: bold;
+        color: #000;
+      }
+
+      &:after {
+        content: "";
+        height: 45px;
+        background-color: #fff;
+        width: 413px;
+        position: absolute;
+        top: -10px;
+        left: -60px;
+      }
+    }
+
+
+    li {
+      position: relative;
+      margin-bottom: 15px;
+      text-align: right;
+
+      &:hover {
+        &:after {
+          content: "";
+          height: 45px;
+          background-color: #fff;
+          width: 413px;
+          position: absolute;
+          top: -10px;
+          left: -60px;
+        }
+
+        a {
+          font-weight: bold;
+          color: #000;
+        }
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.show-menu {
+  right: 16px;
+}
+
+$mobile: 3000px;
+
+@mixin breakpoint($rule){
+  @media only screen and (max-width: #{$rule}){
+    @content;
+  }
+}
+
+.btn-menu {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  height: 27px;
+  width: 44px;
+  cursor: pointer;
+  transition: all .25s ease;
+  display: none;
+  z-index: 103;
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
+
+  span {
+    background: #213041;
+    border: none;
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+  }
+
+  .middle {
+    top: 13px;
+  }
+
+  .bottom {
+    top: 26px;
+  }
+
+  &.active {
+    .top {
+      transform: translateY(8px) translateX(0) rotate(45deg);
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      top: 16px;
+      transform: translateY(-8px) translateX(0) rotate(-45deg);
+    }
+  }
+}
