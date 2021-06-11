@@ -104,6 +104,10 @@ h6 {
 .background-grey {
   background: #F8F8F8; }
 
+.background-gey-2 {
+  display: block;
+  background: #F0F0F0 !important; }
+
 .container {
   margin: 0 auto;
   max-width: 1310px;
@@ -112,6 +116,7 @@ h6 {
 .btn {
   font-size: 15px;
   line-height: 25px;
+  font-weight: 500;
   color: #fff;
   background: #88318E;
   border: none;
@@ -143,42 +148,44 @@ h6 {
   top: 84px;
   bottom: 0;
   right: 200%;
-  max-width: 865px;
+  width: 416px;
   transition: all .25s ease;
   box-shadow: -24px 0px 24px -12px rgba(34, 60, 80, 0.2); }
   .mobile-menu-navigation .navigation {
     display: block;
-    padding: 28px 45px 13px 60px;
+    padding: 20px 44px 21px 60px;
     background: #88318E; }
     .mobile-menu-navigation .navigation .active {
       position: relative; }
       .mobile-menu-navigation .navigation .active a {
-        font-weight: bold;
+        font-weight: 800;
+        line-height: 40px;
         color: #000; }
       .mobile-menu-navigation .navigation .active:after {
         content: "";
         height: 45px;
         background-color: #fff;
-        width: 413px;
+        width: 416px;
         position: absolute;
-        top: -10px;
+        top: -2px;
         left: -60px; }
     .mobile-menu-navigation .navigation li {
       position: relative;
-      margin-bottom: 15px;
+      margin-bottom: 0;
       text-align: right; }
       .mobile-menu-navigation .navigation li:hover:after {
         content: "";
         height: 45px;
         background-color: #fff;
-        width: 413px;
+        width: 416px;
         position: absolute;
-        top: -10px;
+        top: -2px;
         left: -60px; }
       .mobile-menu-navigation .navigation li:hover a {
-        font-weight: bold;
+        font-weight: 800;
         color: #000; }
       .mobile-menu-navigation .navigation li a {
+        line-height: 40px;
         color: #fff; }
 
 .show-menu {
@@ -274,7 +281,7 @@ h6 {
   .language li {
     margin-left: 19px; }
     .language li .active {
-      font-weight: bold;
+      font-weight: 700;
       line-height: 20px;
       color: #000; }
     .language li a {
@@ -285,11 +292,16 @@ h6 {
 
 .social-network {
   margin-top: -5px;
-  margin-left: 67px; }
+  margin-left: 72px; }
   .social-network i {
     font-size: 27px; }
   .social-network li {
     margin-left: 20px; }
+    .social-network li .instagram {
+      margin-top: 4px; }
+    .social-network li .telegram {
+      transform: rotate(8deg);
+      font-size: 22px; }
 
 .banner {
   background: url("../images/banner.png");
@@ -321,7 +333,6 @@ h6 {
     color: #1B1B1B;
     margin-bottom: 22px; }
   .banner-text p {
-    color: #1B1B1B;
     padding-right: 60px;
     margin-bottom: 32px; }
 
@@ -380,7 +391,6 @@ h6 {
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 42px;
-  color: #1B1B1B;
   text-align: center; }
 
 .list-services {
@@ -408,8 +418,7 @@ h6 {
           line-height: 36px;
           color: #1B1B1B; }
       .list-services .list .services p {
-        font-size: 17px;
-        line-height: 25px;
+        font-weight: 400;
         color: #1B1B1B; }
 
 .wrapper-request {
@@ -417,7 +426,7 @@ h6 {
 
 .request {
   position: relative;
-  padding: 62px 0 33px; }
+  padding: 62px 0 47px; }
 
 .wrapper-title {
   margin-bottom: 38px;
@@ -427,12 +436,13 @@ h6 {
   max-width: 530px; }
   .wrapper-title .title {
     display: block;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 30px;
     line-height: 50px;
     color: #fff;
     margin-bottom: -1px; }
   .wrapper-title p {
+    font-weight: 400;
     line-height: 27px;
     color: #fff; }
 
@@ -465,13 +475,29 @@ h6 {
     line-height: 25px;
     color: #E29EE7; }
 
-.form-btn .wrapper-btn .btn {
-  margin-right: 0; }
-
-.form-btn .wrapper-btn p {
-  text-align: center;
-  font-size: 13px;
-  color: #fff; }
+.form-btn .wrapper-btn {
+  display: flex;
+  flex-direction: column;
+  width: 366px; }
+  .form-btn .wrapper-btn .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #88318E;
+    margin-right: 16px;
+    padding: 13px 113px 13px 115px;
+    margin-bottom: 5px; }
+    .form-btn .wrapper-btn .btn:hover {
+      color: #fff; }
+  .form-btn .wrapper-btn p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    padding: 0 37px; }
 
 .decor {
   position: absolute; }
@@ -505,12 +531,14 @@ h6 {
   margin-bottom: 237px;
   text-align: center; }
   .reviews .title {
-    font-weight: bold;
+    font-weight: 700;
     display: block;
     font-size: 40px;
     line-height: 47px;
-    color: #1B1B1B;
     margin-bottom: 41px; }
+
+.reviews .feedback-slider .slick-dots {
+  bottom: -79%; }
 
 .wrapper-slider {
   position: relative;
@@ -522,10 +550,11 @@ h6 {
     margin-right: -50%;
     transform: translate(-50%, -50%); }
   .wrapper-slider .slide p {
-    margin-bottom: 33px; }
+    margin-bottom: 34px; }
   .wrapper-slider .slide .name {
     display: block;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #88318E; }
 
 .slick-arrow {
@@ -563,6 +592,7 @@ h6 {
   display: flex;
   overflow: hidden;
   position: absolute;
+  bottom: -65px;
   left: 50%;
   transform: translateX(-50%); }
   .slick-dots button {
@@ -614,11 +644,10 @@ h6 {
     padding: 68px 46px 68px 70px; }
     .services-for-animals .description .title {
       display: block;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 40px;
       line-height: 47px;
       text-align: center;
-      color: #1B1B1B;
       margin-bottom: 30px; }
     .services-for-animals .description p {
       text-align: left;
@@ -626,6 +655,8 @@ h6 {
     .services-for-animals .description .holder-btn {
       display: flex;
       justify-content: end; }
+      .services-for-animals .description .holder-btn .btn {
+        font-weight: 500; }
 
 .team {
   margin-bottom: 184px; }
@@ -634,8 +665,7 @@ h6 {
     font-weight: 700;
     text-align: center;
     font-size: 40px;
-    line-height: 47px;
-    color: #1B1B1B; }
+    line-height: 47px; }
   .team .wrapper-slider {
     padding: 49px 9px 50px 9px; }
 
@@ -644,8 +674,8 @@ h6 {
   .command-description .title {
     text-align: left;
     font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 24px;
+    line-height: 36px;
+    margin-bottom: 23px;
     padding-left: 50px; }
   .command-description p {
     margin-bottom: 31px; }
@@ -670,7 +700,6 @@ h6 {
   text-align: center;
   font-size: 40px;
   line-height: 47px;
-  color: #1B1B1B;
   margin-bottom: 43px; }
 
 .price {
@@ -721,12 +750,11 @@ h6 {
   .price .ui-accordion .ui-accordion-header {
     background: #EFEFEF !important;
     border: none !important;
-    color: #1B1B1B !important;
     cursor: pointer !important;
     width: 100% !important;
     font-size: 20px;
     line-height: 25px;
-    font-weight: 700;
+    font-weight: 700 !important;
     margin-bottom: 20px;
     position: relative; }
     .price .ui-accordion .ui-accordion-header:focus {
@@ -765,7 +793,6 @@ h6 {
     text-align: center;
     font-size: 40px;
     line-height: 47px;
-    color: #1B1B1B;
     margin-bottom: 32px; }
   .news .news-description .title {
     display: block;
@@ -794,12 +821,12 @@ h6 {
     justify-content: space-between;
     align-items: baseline;
     border-bottom: solid 1px #C4C4C4;
-    padding-bottom: 14px;
+    padding-bottom: 13px;
     margin-bottom: 28px; }
     .wrapper-competition .vote .title-vote {
       font-weight: 700;
       font-size: 30px;
-      line-height: 35px;
+      line-height: 36px;
       margin-left: 38px; }
   .wrapper-competition .competition h4 {
     font-weight: 700;
@@ -845,16 +872,17 @@ h6 {
   margin-bottom: 175px; }
   .heading-about-articles .title-articles {
     display: block;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     font-size: 40px;
     line-height: 47px;
     margin-bottom: 42px; }
 
 .article-list {
-  display: flex; }
+  display: flex;
+  margin: 0 -11px; }
   .article-list li {
-    margin-right: 12px; }
+    margin: 0 10px; }
     .article-list li img {
       margin-bottom: 15px; }
     .article-list li h4 {
@@ -867,42 +895,43 @@ h6 {
     justify-content: flex-end;
     align-items: baseline; }
     .article-list .holder-link .btn-link {
-      font-weight: bold; }
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      text-decoration: underline; }
     .article-list .holder-link img {
-      margin: 0 4px 0 14px; }
+      margin: 0 0 0 14px; }
 
-.contact-list li {
-  margin-bottom: 19px; }
-
-.contact-list address {
-  font-style: inherit;
-  max-width: 250px;
-  margin-bottom: 27px; }
-  .contact-list address:hover {
-    color: #712576;
-    cursor: pointer; }
-
-.contact-list .telephone a {
-  display: block;
+.contact-list {
   color: #000; }
-  .contact-list .telephone a:hover {
-    color: #712576; }
-
-.contact-list .mail {
-  position: relative;
-  padding-bottom: 26px; }
-  .contact-list .mail a {
+  .contact-list li {
+    margin-bottom: 19px; }
+  .contact-list address {
+    font-style: inherit;
+    max-width: 250px;
+    margin-bottom: 27px; }
+    .contact-list address:hover {
+      color: #712576;
+      cursor: pointer; }
+  .contact-list .telephone a {
+    display: block;
     color: #000; }
-    .contact-list .mail a:hover {
+    .contact-list .telephone a:hover {
       color: #712576; }
-  .contact-list .mail:after {
-    content: "";
-    height: 1px;
-    background-color: #DCDCDC;
-    width: 603px;
-    position: absolute;
-    left: 0;
-    bottom: 0; }
+  .contact-list .mail {
+    position: relative;
+    padding-bottom: 26px; }
+    .contact-list .mail a {
+      color: #000; }
+      .contact-list .mail a:hover {
+        color: #712576; }
+    .contact-list .mail:after {
+      content: "";
+      height: 1px;
+      background-color: #DCDCDC;
+      width: 603px;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
 
 .title-contact {
   display: block;
@@ -912,39 +941,16 @@ h6 {
   margin-bottom: 32px;
   padding-left: 50px; }
 
-.accordion-footer .ui-accordion-header {
-  background: #F5C900;
-  color: #fff;
-  padding: 14px 20px 11px 23px;
-  margin-bottom: 37px; }
-
-.accordion-footer {
-  width: 70%; }
-
-.accordion-footer .title {
-  display: block;
-  position: relative; }
-  .accordion-footer .title:hover {
-    background: #e8bd02;
-    cursor: pointer; }
-  .accordion-footer .title:after {
-    content: "";
-    background-image: url("../images/vector.png");
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-repeat: no-repeat;
-    right: -5px;
-    top: 38%; }
-
 .wrapper-contact {
   margin-bottom: -7px; }
 
 .wrapper-social-networks {
-  padding: 0 30px 20px 0; }
+  padding: 0 30px 20px 0;
+  margin-top: -3px; }
   .wrapper-social-networks .title {
     color: #000; }
   .wrapper-social-networks .btn-xl {
+    margin-top: -2px;
     padding: 12px 85px; }
   .wrapper-social-networks .social-network {
     margin-top: 10px;
@@ -957,6 +963,11 @@ h6 {
       color: #525252; }
       .wrapper-social-networks .social-network i:hover {
         color: #712576; }
+      .wrapper-social-networks .social-network i .facebook {
+        margin-top: -4px; }
+      .wrapper-social-networks .social-network i .telegram {
+        font-size: 31px;
+        transform: rotate(7deg); }
 
 .social-network-btn {
   display: flex;
@@ -970,9 +981,46 @@ h6 {
   .scroll img {
     height: 13px; }
   .scroll .scrollto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     display: block;
     color: #fff;
     margin-right: 11px; }
+
+#select1 {
+  font-weight: 700;
+  background: #F5C900;
+  font-size: 17px;
+  line-height: 25px;
+  color: #fff;
+  padding: 14px 25px 11px 23px;
+  margin-bottom: 37px;
+  width: 442px;
+  border: none; }
+  #select1:focus {
+    outline: none; }
+  #select1:hover {
+    background: #e8bd02;
+    cursor: pointer; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.wrapper-select {
+  position: relative; }
+
+.wrapper-select:after {
+  content: "";
+  background-image: url("../images/vector.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 63%;
+  top: 23%;
+  cursor: pointer; }
 
 @media (max-width: 1289px) {
   .slide .title {

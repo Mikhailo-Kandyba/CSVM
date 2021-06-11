@@ -3,14 +3,12 @@
     <title>ЦСВМ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!--библиотека для карусель-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/styles.css">
-    <!--шрифты-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
@@ -50,12 +48,12 @@
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <img class="instagram" src="../images/instagram.png" alt="instagram">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <i class="fa fa-paper-plane telegram" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
@@ -261,23 +259,22 @@
                 </section>
             </div>
             <div class="wrapper-request background-purple">
-                <section class="container">
-                    <div class="request">
-                        <img class="decor decoration-xl" src="../images/decor-track-xl.png" alt="decor">
-                        <img class="decor decoration-sm-1" src="../images/decor-track-sm.png" alt="decor">
-                        <img class="decor decoration-sm-2" src="../images/decor-track-sm.png" alt="decor">
-                        <img class="decor decoration-sm-3" src="../images/decor-track-sm.png" alt="decor">
-                        <img class="decor decoration-sm-4" src="../images/decor-track-sm.png" alt="decor">
-                        <div class="wrapper-title">
-                            <span class="title">
-                                ОСТАВЬТЕ ЗАЯВКУ
-                            </span>
-                            <p>
-                                Сайт рыбатекст поможет дизайнеру, верстальщику,
-                                вебмастеру сгенерировать несколько абзацев
-                            </p>
-                        </div>
-                        <div class="form-btn">
+                <section class="container request">
+                    <img class="decor decoration-xl" src="../images/decor-track-xl.png" alt="decor">
+                    <img class="decor decoration-sm-1" src="../images/decor-track-sm.png" alt="decor">
+                    <img class="decor decoration-sm-2" src="../images/decor-track-sm.png" alt="decor">
+                    <img class="decor decoration-sm-3" src="../images/decor-track-sm.png" alt="decor">
+                    <img class="decor decoration-sm-4" src="../images/decor-track-sm.png" alt="decor">
+                    <div class="wrapper-title">
+                        <span class="title">
+                            ОСТАВЬТЕ ЗАЯВКУ
+                        </span>
+                        <p>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику,
+                            вебмастеру сгенерировать несколько абзацев
+                        </p>
+                    </div>
+                    <div class="form-btn">
                             <form class="contact-form z-index" action="#">
                                 <div class="form-group">
                                     <input type="text" id="Name" placeholder="Ваше имя" name="name..." value="">
@@ -287,14 +284,13 @@
                                 </div>
                             </form>
                             <div class="wrapper-btn">
-                                    <button class="btn btn-xxl bg-white">ЗАПИСАТЬСЯ</button>
+                                    <button class="btn bg-white">ЗАПИСАТЬСЯ</button>
                                     <p>
                                         Отправляя форму, Вы даете согласие
                                         на обработку Ваших персональных данных
                                     </p>
                                 </div>
                         </div>
-                    </div>
                 </section>
             </div>
             <div class="reviews">
@@ -1377,7 +1373,7 @@
                         </div>
                         <div class="">
                             <div class="slide news-description">
-                                <span class="title">КОРОТКОЕ НАЗВАНИЕ НОВОСТИ</span>
+                                <span class="title background-gey-2">КОРОТКОЕ НАЗВАНИЕ НОВОСТИ</span>
                                 <img src="../images/news.png" alt="news">
                             </div>
                         </div>
@@ -1389,7 +1385,7 @@
                         </div>
                         <div class="">
                             <div class="slide news-description">
-                                <span class="title">КОРОТКОЕ НАЗВАНИЕ НОВОСТИ</span>
+                                <span class="title background-gey-2">КОРОТКОЕ НАЗВАНИЕ НОВОСТИ</span>
                                 <img src="../images/news.png" alt="news">
                             </div>
                         </div>
@@ -1522,56 +1518,66 @@
                 <div class="row">
                     <div class="col contact">
                         <span class="title-contact">КОНТАКТЫ</span>
-                        <div class="accordion-footer">
-                            <div>
-                                <h5 class="title">
-                                    НАЗВАНИЕ ФИЛИАЛА
-                                </h5>
-                                <div>
-                                    <ul class="list-city">
-                                        <li>
-                                            <a class="city" href="#">КИЕВ</a>
-                                            <a class="city" href="#">ХАРЬКОВ</a>
-                                            <a class="city" href="#">ОДЕССА</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="wrapper-select">
+                            <select id="select1" onchange="setForm(this.value)">
+                                <option value="form1">КИЕВ</option>
+                                <option value="form2">ХАРЬКОВ</option>
+                            </select>
                         </div>
-                        <ul class="contact-list">
-                            <li>
-                                <address>
-                                    г. Киев, ул Название улицы, 63
-                                    метро Название
-                                </address>
-                            </li>
-                            <li class="telephone">
-                                <a href="tel:380981234567">+38098 123 45 67</a>
-                                <a href="tel:380981234567">+38098 123 45 67</a>
-                            </li>
-                            <li class="mail">
-                                <a href="mailto: example@yandex.ru">
-                                    example@yandex.ru
-                                </a>
-                            </li>
-                        </ul>
+                        <div id="form1">
+                            <ul class="contact-list">
+                                <li>
+                                    <address>
+                                        г. Киев, ул Название улицы, 63
+                                        метро Название
+                                    </address>
+                                </li>
+                                <li class="telephone">
+                                    <a href="tel:380981234567">+38098 123 45 67</a>
+                                    <a href="tel:380981234567">+38098 123 45 67</a>
+                                </li>
+                                <li class="mail">
+                                    <a href="mailto: example@yandex.ru">
+                                        example@yandex.ru
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div  id="form2" style="display: none">
+                            <ul class="contact-list">
+                                <li>
+                                    <address>
+                                        г. Киев, ул Название улицы, 63
+                                        метро Название
+                                    </address>
+                                </li>
+                                <li class="telephone">
+                                    <a href="tel:380981234567">+38098 123 45 67</a>
+                                </li>
+                                <li class="mail">
+                                    <a href="mailto: example@yandex.ru">
+                                        example@yandex.ru
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="wrapper-social-networks">
                             <span class="title">Наши социальные сети</span>
                             <div class="social-network-btn">
                                 <ul class="social-network display-flex">
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                            <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            <img class="instagram" src="../images/instagram-grey.png" alt="instagram">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                            <i class="fa fa-paper-plane telegram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -1593,13 +1599,24 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--библиотека для карусель-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!--библиотека для аккордиона-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
 
-        <!--js accordion-->
+        function setForm(value) {
+
+            if(value == 'form1'){
+                document.getElementById('form1').style='display:block;';
+                document.getElementById('form2').style='display:none;';
+            }
+            else {
+
+                document.getElementById('form2').style = 'display:block;';
+                document.getElementById('form1').style = 'display:none;';
+            }
+
+        }
+
         $( function() {
         $(".accordion-answers").accordion({
           collapsible: true,
@@ -1607,14 +1624,6 @@
         });
       } );
 
-        $( function() {
-            $(".accordion-footer").accordion({
-                collapsible: true,
-                header: ".title",
-            });
-        } );
-
-        <!--js карусель-->
       $('.feedback-slider').slick({
         dots: true,
         infinite: true,
@@ -1681,13 +1690,11 @@
             ]
         });
 
-        <!--js кнопка меню-->
       $(".btn-menu").on('click', function(e) {
           e.preventDefault();
           $(this).toggleClass("active");
           $(".mobile-menu-navigation").toggleClass('show-menu');
       });
-
 
         $(document).ready(function() {
             $("a.scrollto").click(function() {
